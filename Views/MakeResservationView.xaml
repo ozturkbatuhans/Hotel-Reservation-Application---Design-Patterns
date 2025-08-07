@@ -1,0 +1,32 @@
+﻿<Window x:Class="HotelReservatieApp.Views.MakeResservationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelReservatieApp.Views"
+        mc:Ignorable="d"
+        Title="MakeResservationView" Height="350" Width="350">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Username"/>
+            <TextBox x:Name="txtUsername" Margin="0,0,0,5"/>
+
+            <Label Content="Floor Number"/>
+            <TextBox x:Name="txtFloorNumber" Margin="0,0,0,5"/>
+
+            <Label Content="Room Number"/>
+            <TextBox x:Name="txtRoomNumber" Margin="0,0,0,5"/>
+
+            <Label Content="Start Date"/>
+            <DatePicker x:Name="startDatePicker" Margin="0,0,0,5"/>
+
+            <Label Content="End Date"/>
+            <DatePicker x:Name="endDatePicker" Margin="0,0,0,10"/>
+
+            <Button Content="Reserve" Command="{Binding AddNewReservationCommand}" Width="100"/>
+
+            <TextBlock x:Name="txtMessage" Foreground="Red" Margin="0,10,0,0"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
